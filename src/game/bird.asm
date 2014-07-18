@@ -25,12 +25,12 @@ update_bird:
 	call animate_bird			; animate bird
 
 .move:
-	sub word [bird_pos + 2], 6	; move 4 pixels up on the Y axis
+	sub word [bird_pos + 2], 12	; move 4 pixels up on the Y axis
 	clc
 	ret
 
 .fall:
-	add word [bird_pos + 2], 2  ; move 2 pixels down on the Y axis
+	add word [bird_pos + 2], 4  ; move 2 pixels down on the Y axis
 	clc
 	ret
 
